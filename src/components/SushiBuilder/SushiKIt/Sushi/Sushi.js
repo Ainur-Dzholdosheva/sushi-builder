@@ -5,7 +5,7 @@ export default ({ type }) => {
   const SushiClasses = [classes.Sushi];
 
   switch (type) {
-    case "salmon-roll":
+    case "salmonRoll":
       SushiClasses.push(classes.salmonRoll);
       break;
 
@@ -13,7 +13,7 @@ export default ({ type }) => {
       SushiClasses.push(classes.maki);
       break;
 
-    case "tuna-roll":
+    case "tunaRoll":
       SushiClasses.push(classes.tunaRoll);
       break;
   }

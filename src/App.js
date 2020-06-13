@@ -1,12 +1,13 @@
 import React from "react";
 import "./App.css";
 import Layout from "./components/Layout/Layout";
+import SushiBuilder from "./containers/SushiBuilder/SushiBuilder";
 
 export default () => {
   return (
     <div className="App">
       <Layout>
-        <h1>Sushi builder</h1>
+        <SushiBuilder />
       </Layout>
     </div>
   );

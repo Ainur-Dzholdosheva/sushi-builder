@@ -1,0 +1,12 @@
+.SushiControls {
+  border: 3px solid rgb(26, 131, 29);
+  background-color: rgb(74, 169, 104);
+  width: 300px;
+  border-radius: 0.5rem;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SushiKit from "../../components/SushiBuilder/SushiKIt/SushiKit";
 import classes from "./SushiBuilder.module.css";
+import SushiControls from "../../components/SushiBuilder/SushiControls/SushiControls";
 
 export default () => {
   const [ingredients, setIngredients] = useState({
@@ -8,10 +9,11 @@ export default () => {
     tunaRoll: 12,
     maki: 5,
   });
+  function addIngredient() {}
   return (
     <div className={classes.SushiBuilder}>
       <SushiKit ingredients={ingredients} />
-      SushiControls
+      <SushiControls />
     </div>
   );
 };

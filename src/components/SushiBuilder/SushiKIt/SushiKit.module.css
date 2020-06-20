@@ -1,9 +1,9 @@
-.SushiKit {
+.SushiKit .bento {
   background-color: lightgray;
   width: 400px;
   height: 300px;
-  padding-top: 5rem;
-  padding-left: 5rem;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
 
   display: flex;
   flex-flow: row wrap;
@@ -11,4 +11,8 @@
   justify-content: space-evenly;
 
   overflow: hidden;
+}
+.SushiKit .price {
+  font-size: 2rem;
+  font-weight: bold;
 }

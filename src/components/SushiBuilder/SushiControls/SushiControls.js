@@ -7,12 +7,13 @@ const CONTROLS = [
   { label: "Salmon Roll", type: "salmonRoll" },
   { label: "Maki", type: "maki" },
 ];
-export default ({ addIngredient, removeIngredient }) => {
+export default ({ ingredients, addIngredient, removeIngredient }) => {
   const controlsOutput = CONTROLS.map((control) => (
     <SushiControl
       control={control}
       addIngredient={addIngredient}
       removeIngredient={removeIngredient}
+      disabled={ingredients[control.type] === 0}
     />
   ));
   return <div className={classes.SushiControls}>{controlsOutput}</div>;

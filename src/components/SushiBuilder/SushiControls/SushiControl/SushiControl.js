@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./SushiControl.module.css";
 
-export default ({ control, removeIngredient, addIngredient }) => (
+export default ({ control, removeIngredient, addIngredient, disabled }) => (
   <div className={classes.SushiControl}>
     <span className={classes.label}>{control.label}</span>
     <button
@@ -13,6 +13,7 @@ export default ({ control, removeIngredient, addIngredient }) => (
     <button
       className={classes.more}
       onClick={() => addIngredient(control.type)}
+      disabled={disabled}
     >
       More
     </button>

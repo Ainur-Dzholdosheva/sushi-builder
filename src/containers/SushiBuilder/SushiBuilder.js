@@ -33,6 +33,7 @@ export default () => {
     <div className={classes.SushiBuilder}>
       <SushiKit price={price} ingredients={ingredients} />
       <SushiControls
+        ingredients={ingredients}
         addIngredient={addIngredient}
         removeIngredient={removeIngredient}
       />

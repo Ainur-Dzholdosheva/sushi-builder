@@ -6,6 +6,7 @@ export default ({ control, removeIngredient, addIngredient, disabled }) => (
     <button
       className={classes.less}
       onClick={() => removeIngredient(control.type)}
+      disabled={disabled}
     >
       -
     </button>
@@ -13,7 +14,6 @@ export default ({ control, removeIngredient, addIngredient, disabled }) => (
     <button
       className={classes.more}
       onClick={() => addIngredient(control.type)}
-      disabled={disabled}
     >
       +
     </button>
